@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>NYT Search</title>
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron" color="black">
+      <h1 class="text-center">
+          <span class="fa fa-newspaper-o"></span> <strong>New York Times Search</strong>
+      </h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="card card-default">
+          <div class="card-header">
+              <span class="fa fa-wpforms"></span> Search Parameters
+          </div>
+          <div class="card-body">
+            <div class="text-left">
+                <form>
+                    <div class="form-group">
+                        <label for="term">Search Term:</label>
+                        <input type="text" class="form-control" id="term">
+                    </div>
+                    <div class="form-group">
+                        <label for="records">Number of Records to Retrieve:</label>
+                        <input type="number" class="form-control" id="records">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-year">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="start-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-year">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="end-year">
+                    </div>
+                    <button type="button" class="btn btn-info"><i class="fa fa-search"></i> Search</button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-trash-o"></i> Clear Results</button>
+                </form>
+            </div>
+          </div>
+
+
+        </div>
+
+          <div class="row">
+              <div class="col-md-12">
+              </hr>
+                  <br>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card card-default">
+                      <div class="card-header">
+                          <span class="fa fa-paperclip"></span> Top Articles
+                      </div>
+                      <div class="card-body">
+                          <div class="text-left" id="result">
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
